@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="project_kanban_view_inherit" model="ir.ui.view">
+        <field name="name">project.kanban</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.view_project_kanban"/>
+        <field name="arch" type="xml">
+            <xpath expr="//kanban" position="attributes">
+                <attribute name="action"></attribute>
+                <attribute name="type">open</attribute>
+            </xpath>
+        </field>
+    </record>
+        
+</odoo>

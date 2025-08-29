@@ -16,7 +16,7 @@ class MusicSchoolTeacher(models.Model):
         copy=False,
         ondelete='cascade',
     )
-    reference = fields.Char(String="Reference")
+    reference = fields.Char(string="Reference")
     course_id = fields.One2many(
         comodel_name="music.school.course",
         inverse_name="teacher_id",

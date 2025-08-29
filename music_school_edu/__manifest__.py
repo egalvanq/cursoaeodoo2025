@@ -7,7 +7,7 @@
     'author': 'Edu',
     'installable': True,
     'depends': [
-        'base','mail',
+        'base','mail','project'
     ],
     'data': [
         'data/ir_cron.xml',
@@ -24,6 +24,7 @@
         'views/music_school_exam_view.xml',
         'views/music_school_exam_result_view.xml',
         'views/music_school_menuitems.xml',
+        # 'views/project_kanban_view_inherit.xml',
         'wizard/music_school_course_change_state.xml',
         'wizard/music_school_lesson_create_wizard_view.xml',
         'report/music_school_course_report.xml',
